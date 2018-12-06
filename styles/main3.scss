@@ -1,0 +1,27 @@
+
+body {
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 200px 200px 200px;
+        
+
+
+        div {
+            background: #aaaaaa;
+            border: 2px solid #aa77ff;
+        }
+        .test1 {
+            background: #aa0000;
+            grid-column-start: 3;
+        }
+        .test3 {
+            background: #aaaa00;
+            grid-column-start:1;
+            
+        }
+    }
+}
+
+
+            

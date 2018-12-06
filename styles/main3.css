@@ -1,0 +1,26 @@
+body .wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 200px 200px 200px;
+      grid-template-rows: 200px 200px 200px;
+}
+
+body .wrapper div {
+  background: #aaaaaa;
+  border: 2px solid #aa77ff;
+}
+
+body .wrapper .test1 {
+  background: #aa0000;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+}
+
+body .wrapper .test3 {
+  background: #aaaa00;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+}
+/*# sourceMappingURL=main3.css.map */
