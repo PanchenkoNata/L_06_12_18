@@ -1,0 +1,22 @@
+
+body {
+    nav {
+        height: 75px;
+        font-size: 16px;
+        display: flex;
+        justify-content: space-around;
+        background: #aaaaaa;
+
+        div {
+            display: flex;
+            align-items: center;
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+            
