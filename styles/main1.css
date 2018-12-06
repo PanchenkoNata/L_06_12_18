@@ -1,0 +1,9 @@
+body .round {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  background: url(../images/kotiki-31.jpg) center center no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=main1.css.map */
