@@ -3,67 +3,39 @@ body .wrapper {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: 200px 200px 200px;
-      grid-template-rows: 200px 200px 200px;
-      grid-template-areas: "_9 _6 _2" "_4 _5 _1" "_7 _8 _3";
+  -ms-grid-rows: 200px;
+      grid-template-rows: 200px;
+      grid-template-areas: "a b c";
 }
 
-body .wrapper:nth-child(1) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
-  grid-area: _1;
-}
-
-body .wrapper:nth-child(2) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: _2;
-}
-
-body .wrapper:nth-child(3) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-  grid-area: _3;
-}
-
-body .wrapper:nth-child(4) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: _4;
-}
-
-body .wrapper:nth-child(5) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: _5;
-}
-
-body .wrapper:nth-child(6) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: _6;
-}
-
-body .wrapper:nth-child(7) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: _7;
-}
-
-body .wrapper:nth-child(8) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: _8;
-}
-
-body .wrapper:nth-child(9) {
+body .wrapper .test1 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-area: _9;
+  grid-area: a;
+  background: #aa77aa;
+}
+
+body .wrapper .test2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: b;
+}
+
+body .wrapper .test3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: c;
+  background: #9edf27;
 }
 
 body .wrapper div {
   background: #aaaaaa;
   border: 2px solid #aa77ff;
+}
+
+@media screen and (max-width: 600px) {
+  body .wrapper {
+        grid-template-areas: "c b a";
+  }
 }
 /*# sourceMappingURL=main3.css.map */
