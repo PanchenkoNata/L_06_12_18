@@ -4,21 +4,41 @@ body {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 200px 200px 200px;
-        
+        grid-template-areas: "_9 _6 _2"
+                            "_4 _5 _1"
+                            "_7 _8 _3";
 
+        &:nth-child(1) {
+            grid-area: _1;
+        }
+        &:nth-child(2) {
+            grid-area: _2;
+        }
+        &:nth-child(3) {
+            grid-area: _3;
+        }
+        &:nth-child(4) {
+            grid-area: _4;
+        }
+        &:nth-child(5) {
+            grid-area: _5;
+        }
+        &:nth-child(6) {
+            grid-area: _6;
+        }
+        &:nth-child(7) {
+            grid-area: _7;
+        }
+        &:nth-child(8) {
+            grid-area: _8;
+        }
+        &:nth-child(9) {
+            grid-area: _9;
+        }
 
         div {
             background: #aaaaaa;
             border: 2px solid #aa77ff;
-        }
-        .test1 {
-            background: #aa0000;
-            grid-column-start: 3;
-        }
-        .test3 {
-            background: #aaaa00;
-            grid-column-start:1;
-            
         }
     }
 }
